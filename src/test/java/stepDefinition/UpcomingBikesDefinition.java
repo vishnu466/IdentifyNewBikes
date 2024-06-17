@@ -24,6 +24,7 @@ public class UpcomingBikesDefinition {
 	   hp = new HomePage(driver);
 	   try {
 		   hp.clickMaybeLater();
+		   BaseClass.getLogger().info("====================clicked Maybelater=================");
 		   } 
 	   catch (Exception e) {
 		   System.out.println("Maybe Later not found");
@@ -34,16 +35,19 @@ public class UpcomingBikesDefinition {
 	public void clicking_on_upcoming_bikes() throws Exception{
 		ExcelUtility.createExcelFile();
 	    hp.navigateToUpcomingBikes();
+	    BaseClass.getLogger().info("========================navigated to upcoming bikes page========================");
 	}
 
 	@When("selecting Honda in the dropdown")
 	public void selectingHonda() throws InterruptedException {
 	    ub = new UpcomingBikes(driver);
+	    BaseClass.getLogger().info("=================Selected Honda in dropdown==================");
 	    ub.selectBike();
 	}
 
 	@Then("printing the upcoming bikes with price less than four lakhs")
 	public void printingUpcomingBikes() throws Exception {
 	    Assert.assertEquals(ub.bikesLessthanFourLakhs(), true);
+	    BaseClass.getLogger().info("====================Printed the Upcoming Bikes==========================");
 	}
 }
