@@ -22,13 +22,13 @@ public class UpcomingBikesDefinition {
 	public void navigatingtowebpage()  {
 	   driver = BaseClass.getDriver();
 	   hp = new HomePage(driver);
-	   try {
-		   hp.clickMaybeLater();
-		   BaseClass.getLogger().info("====================clicked Maybelater=================");
-		   } 
-	   catch (Exception e) {
-		   System.out.println("Maybe Later not found");
-	   }
+//	   try {
+//		   hp.clickMaybeLater();
+//		   BaseClass.getLogger().info("====================clicked Maybelater=================");
+//		   } 
+//	   catch (Exception e) {
+//		   System.out.println("Maybe Later not found");
+//	   }
 	}
 
 	@When("clicking on Upcoming Bikes")

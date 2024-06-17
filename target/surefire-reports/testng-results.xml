@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-17T11:28:11 IST" name="Suite" finished-at="2024-06-17T11:33:10 IST" duration-ms="299635">
+  <suite started-at="2024-06-17T16:33:01 IST" name="Suite" finished-at="2024-06-17T16:38:33 IST" duration-ms="332479">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-06-17T11:28:11 IST" name="Test" finished-at="2024-06-17T11:33:10 IST" duration-ms="299635">
+    <test started-at="2024-06-17T16:33:01 IST" name="Test" finished-at="2024-06-17T16:38:33 IST" duration-ms="332479">
       <class name="testRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T11:28:11 IST" name="setUpClass" finished-at="2024-06-17T11:28:12 IST" duration-ms="1205" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T16:33:01 IST" name="setUpClass" finished-at="2024-06-17T16:33:02 IST" duration-ms="1178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@738a39cc]]>
+                <![CDATA[org.testng.TestRunner@33568e26]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T11:28:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T11:29:51 IST" duration-ms="98842" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T16:33:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T16:34:44 IST" duration-ms="101726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,25 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "₹ 4.99"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "₹ 4.99"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at pageObject.UpcomingBikes.bikesLessthanFourLakhs(UpcomingBikes.java:73)
-at stepDefinition.UpcomingBikesDefinition.printingUpcomingBikes(UpcomingBikesDefinition.java:47)
-at ✽.printing the upcoming bikes with price less than four lakhs(file:///C:/Users/2318906/eclipse-workspace/HandsOnJava/HackathonProject/./Feature/IdentifyNewBikes.feature:7)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T11:29:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T11:31:30 IST" duration-ms="98829" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T16:34:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T16:36:49 IST" duration-ms="125781" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -65,10 +50,34 @@ at ✽.printing the upcoming bikes with price less than four lakhs(file:///C:/Us
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (8eca0ecb171f81e78c208f5620c73639)] -> xpath: //li[@id='submenu_4usedcars']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.58, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\2318906\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64354/devtoo..., se:cdpVersion: 122.0.6261.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8eca0ecb171f81e78c208f5620c73639]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (8eca0ecb171f81e78c208f5620c73639)] -> xpath: //li[@id='submenu_4usedcars']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.58, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: C:\Users\2318906\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64354}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64354/devtoo..., se:cdpVersion: 122.0.6261.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8eca0ecb171f81e78c208f5620c73639
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at pageObject.UsedCars.clickUsedCarsChennai(UsedCars.java:41)
+at stepDefinition.UsedCarsDefinition.clickingUsedcarsChennai(UsedCarsDefinition.java:27)
+at ✽.clicking used cars in chennai(file:///C:/Users/2318906/eclipse-workspace/HandsOnJava/HackathonProject/./Feature/IdentifyNewBikes.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T11:31:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T11:33:09 IST" duration-ms="99464" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T16:36:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-06-17T16:38:32 IST" duration-ms="103122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,23 +90,10 @@ at ✽.printing the upcoming bikes with price less than four lakhs(file:///C:/Us
               </value>
             </param>
           </params>
-          <exception class="org.junit.ComparisonFailure">
-            <message>
-              <![CDATA[expected:<Couldn[’]t find your Google A...> but was:<Couldn[â€™]t find your Google A...>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.junit.ComparisonFailure: expected:<Couldn[’]t find your Google A...> but was:<Couldn[â€™]t find your Google A...>
-at org.junit.Assert.assertEquals(Assert.java:117)
-at org.junit.Assert.assertEquals(Assert.java:146)
-at stepDefinition.LoginPageDefinition.printErrorMsg(LoginPageDefinition.java:41)
-at ✽.print could not find your google account(file:///C:/Users/2318906/eclipse-workspace/HandsOnJava/HackathonProject/./Feature/IdentifyNewBikes.feature:21)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.junit.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T11:33:09 IST" name="tearDownClass" finished-at="2024-06-17T11:33:10 IST" duration-ms="1174" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@6adbc9d]" started-at="2024-06-17T16:38:32 IST" name="tearDownClass" finished-at="2024-06-17T16:38:33 IST" duration-ms="591" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
