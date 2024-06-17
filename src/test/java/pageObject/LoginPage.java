@@ -25,7 +25,7 @@ public class LoginPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		act = new Actions(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 	
 	@FindBy(xpath="//div[@class='S9gUrf-YoZ4jf']") WebElement googleSignIn;

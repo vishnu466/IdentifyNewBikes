@@ -60,10 +60,10 @@ public class UpcomingBikes {
 			
 			if(p.contains(" - ")) {
 				expPrice = p.split(" - ");
-				String maxPrice = expPrice[1].replace("₹", "");
-				String lakh  = maxPrice.replace("Lakh", "");
-				String star = lakh.replace("*", "");
-				double price = Double.parseDouble(star);
+				String maxPrice = expPrice[1].replaceAll("[^0-9.]", "");
+//				String lakh  = maxPrice.replace("Lakh", "");
+//				String star = lakh.replace("*", "");
+				double price = Double.parseDouble(maxPrice);
 				resultPrice.add(price);
 			}	
 			else {
