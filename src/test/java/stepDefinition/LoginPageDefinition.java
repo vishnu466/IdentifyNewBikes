@@ -41,6 +41,7 @@ public class LoginPageDefinition {
 	@Then("print could not find your google account")
 	public void printErrorMsg() throws IOException {
 		String msg = lp.printMessage();
+		System.out.println(msg);
 		BaseClass.getLogger().info("====================Getting the error Message====================");
 		Assert.assertEquals((msg!=null), true);
 	}

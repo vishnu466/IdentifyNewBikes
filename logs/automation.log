@@ -21,3 +21,22 @@
 16:43:53.476 [main] INFO  factory.BaseClass - ==================Clicking Sign in with google====================
 16:43:54.327 [main] INFO  factory.BaseClass - ===================Switching to Google sign in window==================
 16:43:57.804 [main] INFO  factory.BaseClass - ====================Getting the error Message====================
+16:59:00.746 [main] INFO  factory.BaseClass - =================Clicking login button================
+16:59:04.514 [main] INFO  factory.BaseClass - ==================Clicking Sign in with google====================
+16:59:05.200 [main] INFO  factory.BaseClass - ===================Switching to Google sign in window==================
+16:59:11.081 [main] INFO  factory.BaseClass - ====================Getting the error Message====================
+17:00:56.953 [main] INFO  factory.BaseClass - =================Clicking login button================
+17:01:00.719 [main] INFO  factory.BaseClass - ==================Clicking Sign in with google====================
+17:01:01.379 [main] INFO  factory.BaseClass - ===================Switching to Google sign in window==================
+17:01:07.204 [main] INFO  factory.BaseClass - ====================Getting the error Message====================
+17:33:41.952 [main] INFO  factory.BaseClass - ========================navigated to upcoming bikes page========================
+17:33:42.522 [main] INFO  factory.BaseClass - =================Selected Honda in dropdown==================
+17:33:53.850 [main] INFO  factory.BaseClass - ====================Printed the Upcoming Bikes==========================
+17:34:05.297 [main] INFO  factory.BaseClass - ==================Hovered on Used Cars====================
+17:34:06.326 [main] INFO  factory.BaseClass - ==================Clicked Used Cars in Chennai====================
+17:34:07.399 [main] INFO  factory.BaseClass - ==================Clicked Read More====================
+17:34:08.850 [main] INFO  factory.BaseClass - ==================Printed Popular Cars====================
+17:34:18.258 [main] INFO  factory.BaseClass - =================Clicking login button================
+17:34:22.664 [main] INFO  factory.BaseClass - ==================Clicking Sign in with google====================
+17:34:23.440 [main] INFO  factory.BaseClass - ===================Switching to Google sign in window==================
+17:34:26.537 [main] INFO  factory.BaseClass - ====================Getting the error Message====================
