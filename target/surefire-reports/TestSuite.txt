@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 300.742 s <<< FAILURE! - in TestSuite
+testRunner.TestRunner.runScenario["UpcomingBikes", "91 Wheels"](1)  Time elapsed: 98.988 s  <<< FAILURE!
+java.lang.NumberFormatException: For input string: "₹ 4.99"
+
+testRunner.TestRunner.runScenario["IncorrectLogin", "91 Wheels"](3)  Time elapsed: 99.378 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Couldn[’]t find your Google A...> but was:<Couldn[â€™]t find your Google A...>
+
