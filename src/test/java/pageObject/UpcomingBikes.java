@@ -67,10 +67,10 @@ public class UpcomingBikes {
 				resultPrice.add(price);
 			}	
 			else {
-				String maxPrice = p.replace("₹", "");
-				String lakh  = maxPrice.replace("Lakh", "");
-				String star = lakh.replace("*", "");
-				double price = Double.parseDouble(star);
+				String maxPrice = p.replaceAll("[^0-9.]", "");
+//				String lakh  = maxPrice.replace("Lakh", "");
+//				String star = lakh.replace("*", "");
+				double price = Double.parseDouble(maxPrice);
 				resultPrice.add(price);
 			}
 			
