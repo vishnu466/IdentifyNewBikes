@@ -27,11 +27,14 @@ public class HomePage {
 	@FindBy(xpath = "//li[@id='menubike1']/ul/child::li[6]/a") WebElement upcomingBikes;
 	@FindBy(xpath = "//div[@class='relative flex items-center justify-center cursor-pointer']") WebElement loginBtn;
 	
+	
+	//Method to click maybe later in the homepage
 	public void clickMaybeLater() {
 		wait.until(ExpectedConditions.visibilityOf(maybe));
 		maybe.click();
 	}
 	
+	//Method to navigate to upcoming bikes
 	public void navigateToUpcomingBikes() {
 		wait.until(ExpectedConditions.visibilityOf(Bikes));
 		act.moveToElement(Bikes).click().perform();
@@ -40,6 +43,7 @@ public class HomePage {
 		upcomingBikes.click();
 	}
 	
+	//Method to click login button
 	public void loginBtn() {
 		wait.until(ExpectedConditions.visibilityOf(loginBtn));
 		loginBtn.click();
