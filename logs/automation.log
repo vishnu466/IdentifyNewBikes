@@ -5,3 +5,42 @@
 10:46:28.221 [main] INFO  factory.BaseClass - Clicked Sign in with google
 10:46:28.617 [main] INFO  factory.BaseClass - Switched to Google sign in window
 10:46:30.326 [main] INFO  factory.BaseClass - Got the error Message
+10:55:22.733 [main] INFO  factory.BaseClass - Navigated to upcoming bikes page
+10:55:26.674 [main] INFO  factory.BaseClass - Selected Honda in dropdown
+10:55:29.336 [main] INFO  factory.BaseClass - Printed the Upcoming Bikes
+10:55:37.485 [main] INFO  factory.BaseClass - Hovered on Used Cars
+10:55:37.841 [main] INFO  factory.BaseClass - Clicked Used Cars in Chennai
+10:55:39.056 [main] INFO  factory.BaseClass - Clicked Read More
+10:55:39.824 [main] INFO  factory.BaseClass - Printed Popular Cars
+10:55:47.533 [main] INFO  factory.BaseClass - Clicked login button
+10:57:10.541 [main] INFO  factory.BaseClass - Navigated to upcoming bikes page
+10:57:14.139 [main] INFO  factory.BaseClass - Selected Honda in dropdown
+10:57:16.591 [main] INFO  factory.BaseClass - Printed the Upcoming Bikes
+10:57:24.749 [main] INFO  factory.BaseClass - Hovered on Used Cars
+10:57:25.120 [main] INFO  factory.BaseClass - Clicked Used Cars in Chennai
+10:57:25.899 [main] INFO  factory.BaseClass - Clicked Read More
+10:57:26.638 [main] INFO  factory.BaseClass - Printed Popular Cars
+10:57:33.850 [main] INFO  factory.BaseClass - Clicked login button
+10:57:40.887 [main] INFO  factory.BaseClass - Clicked Sign in with google
+10:57:41.233 [main] INFO  factory.BaseClass - Switched to Google sign in window
+10:57:43.355 [main] INFO  factory.BaseClass - Got the error Message
+10:58:29.603 [main] INFO  factory.BaseClass - Navigated to upcoming bikes page
+10:58:33.764 [main] INFO  factory.BaseClass - Selected Honda in dropdown
+10:58:36.418 [main] INFO  factory.BaseClass - Printed the Upcoming Bikes
+10:58:44.556 [main] INFO  factory.BaseClass - Hovered on Used Cars
+10:58:44.988 [main] INFO  factory.BaseClass - Clicked Used Cars in Chennai
+10:58:45.801 [main] INFO  factory.BaseClass - Clicked Read More
+10:58:46.654 [main] INFO  factory.BaseClass - Printed Popular Cars
+10:58:54.513 [main] INFO  factory.BaseClass - Clicked login button
+10:59:10.210 [main] INFO  factory.BaseClass - Clicked Sign in with google
+10:59:10.608 [main] INFO  factory.BaseClass - Switched to Google sign in window
+10:59:12.675 [main] INFO  factory.BaseClass - Got the error Message
+11:00:02.117 [main] INFO  factory.BaseClass - Navigated to upcoming bikes page
+11:00:06.100 [main] INFO  factory.BaseClass - Selected Honda in dropdown
+11:00:08.959 [main] INFO  factory.BaseClass - Printed the Upcoming Bikes
+11:00:16.994 [main] INFO  factory.BaseClass - Hovered on Used Cars
+11:00:17.440 [main] INFO  factory.BaseClass - Clicked Used Cars in Chennai
+11:00:18.211 [main] INFO  factory.BaseClass - Clicked Read More
+11:00:19.059 [main] INFO  factory.BaseClass - Printed Popular Cars
+11:00:26.881 [main] INFO  factory.BaseClass - Clicked login button
+11:04:54.054 [main] INFO  factory.BaseClass - Clicked login button

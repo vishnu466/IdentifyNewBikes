@@ -46,8 +46,6 @@ public class LoginPage {
     
     // Method to initiate Google sign-in process
     public void googleSignIn() throws InterruptedException {
-        // Pausing execution for 3 seconds
-        Thread.sleep(4000);
         // Waiting until the Google sign-in button is visible
         wait.until(ExpectedConditions.visibilityOf(googleSignIn));
         // Clicking the Google sign-in button

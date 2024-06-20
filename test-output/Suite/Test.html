@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 20 10:45:37 IST 2024</td>
+<td>Started on:</td><td>Thu Jun 20 11:04:33 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59387 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41470 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,20 +76,169 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "IncorrectLogin", "91 Wheels"</td>
-<td></td>
-<td>28</td>
-<td>testRunner.TestRunner@6337c201</td></tr>
-<tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "UpcomingBikes", "91 Wheels"</td>
-<td></td>
-<td>17</td>
-<td>testRunner.TestRunner@6337c201</td></tr>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b16905c439c4bb266210e05ceb6ef60, get {url=https://www.91wheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52948/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b16905c439c4bb266210e05ceb6ef60
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at hooks.Hooks.getBrowser(Hooks.java:24)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597623166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597623166'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b16905c439c4bb266210e05ceb6ef60, get {url=https://www.91wheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52948}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52948/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b16905c439c4bb266210e05ceb6ef60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at hooks.Hooks.getBrowser(Hooks.java:24)
+</pre></div></td>
+<td>6</td>
+<td>testRunner.TestRunner@7ef27d7f</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "UsedCarsInChennai", "91 Wheels"</td>
-<td></td>
-<td>9</td>
-<td>testRunner.TestRunner@6337c201</td></tr>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5aa9bebe700bcc594ee4d3335597fd9, get {url=https://www.91wheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52965/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5aa9bebe700bcc594ee4d3335597fd9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at hooks.Hooks.getBrowser(Hooks.java:24)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834153999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace834153999'><pre>org.openqa.selenium.WebDriverException: unknown error: net::ERR_PROXY_CONNECTION_FAILED
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5aa9bebe700bcc594ee4d3335597fd9, get {url=https://www.91wheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52965}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52965/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d5aa9bebe700bcc594ee4d3335597fd9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at hooks.Hooks.getBrowser(Hooks.java:24)
+</pre></div></td>
+<td>5</td>
+<td>testRunner.TestRunner@7ef27d7f</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "IncorrectLogin", "91 Wheels"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cc5705b3158c6fd21a341e5e0c4c8d5, findElement {value=//div[@class=&apos;S9gUrf-YoZ4jf&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52983/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cc5705b3158c6fd21a341e5e0c4c8d5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at pageObject.LoginPage.googleSignIn(LoginPage.java:50)
+	at stepDefinition.LoginPageDefinition.signInWithGoogle(LoginPageDefinition.java:45)
+	at ✽.sign in with google(file:///C:/Users/2318906/eclipse-workspace/HandsOnJava/HackathonProject/./Feature/IdentifyNewBikes.feature:19)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1438594533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1438594533'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cc5705b3158c6fd21a341e5e0c4c8d5, findElement {value=//div[@class=&apos;S9gUrf-YoZ4jf&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.59, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52983}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52983/devtoo..., se:cdpVersion: 123.0.6312.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cc5705b3158c6fd21a341e5e0c4c8d5
+	at jdk.internal.reflect.GeneratedConstructorAccessor35.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:295)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at java.base/java.lang.StringConcatHelper.simpleConcat(StringConcatHelper.java:408)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at pageObject.LoginPage.googleSignIn(LoginPage.java:50)
+	at stepDefinition.LoginPageDefinition.signInWithGoogle(LoginPageDefinition.java:45)
+	at ✽.sign in with google(file:///C:/Users/2318906/eclipse-workspace/HandsOnJava/HackathonProject/./Feature/IdentifyNewBikes.feature:19)
+</pre></div></td>
+<td>19</td>
+<td>testRunner.TestRunner@7ef27d7f</td></tr>
 </table><p>
 </body>
 </html>
