@@ -26,7 +26,7 @@ public class LoginPageDefinition {
 	
 	
 	@Given("click login icon")
-	public void clickloginBtn() throws InterruptedException {
+	public void clickloginBtn() throws Exception {
 		// Get the WebDriver instance from the BaseClass
 		driver = BaseClass.getDriver();
 		// Initialize the LoginPage and HomePage objects
@@ -35,7 +35,7 @@ public class LoginPageDefinition {
 	    // Click the login button on the home page
 	    hp.loginBtn();
 	    // Log the click action
-	    BaseClass.getLogger().info("Clicked login button");
+	    BaseClass.getLogger().info("==================Clicked login button=======================");
 	}
 
 	
@@ -44,7 +44,7 @@ public class LoginPageDefinition {
 	    // Perform the Google sign-in action
 	    lp.googleSignIn();
 	    // Log the Google sign-in action
-	    BaseClass.getLogger().info("Clicked Sign in with google");
+	    BaseClass.getLogger().info("======================Clicked Sign in with google=====================");
 	}
 
 	@When("enter invalid email id")
@@ -52,7 +52,7 @@ public class LoginPageDefinition {
 	    // Switch to the Google sign-in window
 	    lp.switchWindow();
 	    // Log the window switch action
-	    BaseClass.getLogger().info("Switched to Google sign in window");
+	    BaseClass.getLogger().info("=======================Switched to Google sign in window======================");
 	    // Perform email validation
 	    lp.mailValidation();  
 	}
@@ -65,7 +65,7 @@ public class LoginPageDefinition {
 		// Print the error message to the console
 		System.out.println(msg);
 		// Log the retrieval of the error message
-		BaseClass.getLogger().info("Got the error Message");
+		BaseClass.getLogger().info("==================Got the error Message=========================");
 		// Assert that the message is not null
 		Assert.assertEquals((msg!=null), true);
 	}

@@ -44,7 +44,8 @@ public class HomePage {
 	}
 	
 	//Method to click login button
-	public void loginBtn() {
+	public void loginBtn() throws InterruptedException {
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(loginBtn));
 		loginBtn.click();
 	}
