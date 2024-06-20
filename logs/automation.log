@@ -78,3 +78,14 @@
 11:13:46.663 [main] INFO  factory.BaseClass - ==================Clicking Sign in with google====================
 11:13:47.511 [main] INFO  factory.BaseClass - ===================Switching to Google sign in window==================
 11:13:52.909 [main] INFO  factory.BaseClass - ====================Getting the error Message====================
+10:09:23.569 [main] INFO  factory.BaseClass - Navigated to upcoming bikes page
+10:09:28.863 [main] INFO  factory.BaseClass - Selected Honda in dropdown
+10:09:39.028 [main] INFO  factory.BaseClass - Printed the Upcoming Bikes
+10:09:58.100 [main] INFO  factory.BaseClass - Hovered on Used Cars
+10:09:59.670 [main] INFO  factory.BaseClass - Clicked Used Cars in Chennai
+10:10:01.178 [main] INFO  factory.BaseClass - Clicked Read More
+10:10:03.274 [main] INFO  factory.BaseClass - Printed Popular Cars
+10:10:19.182 [main] INFO  factory.BaseClass - Clicking login button
+10:10:23.590 [main] INFO  factory.BaseClass - Clicking Sign in with google
+10:10:24.306 [main] INFO  factory.BaseClass - Switching to Google sign in window
+10:10:27.792 [main] INFO  factory.BaseClass - Getting the error Message
